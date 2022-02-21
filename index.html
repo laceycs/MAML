@@ -1,73 +1,99 @@
 <html>
 <head>
+  <title>Team MAML Website</title>
   <style>
     body {
       background-color: powderblue;
+      font-family: sans-serif;
+      width: 800px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    h1 {
-        margin: auto;
-        width: 50%;
-        border: 3px solid navy;
-        padding: 10px;
-        color: #0074D9;
-        text-align: center;
-      }
+    .box {
+      background-color: #8DB3B8;
+      border: 3px solid navy;
+      border-radius: 6px;
+      margin-bottom: 30px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    #title {
+      margin: auto;
+      background-color: #8DB3B8;
+      color: navy;
+      width: 50%;
+      border: 3px solid navy;
+      border-radius: 6px;
+      padding: 10px;
+      text-align: center;
+    }
     h3 {
-        margin:auto;
-        padding:10px;
-        color: teal;
+      color: teal;
+      margin-left: 30px;
     }
     h2 {
-        color:navy;
-        padding-left:50px;
+      color:navy;
     }
     
     p {
-        padding-left: 80px;
+      margin-left: 30px;
     }
     
     ul {
-        padding-left: 100px;
+      margin-left: 50px;
     }
     
     img {
-        padding-left: 80px;
+      margin-left: 30px;
+      border: 3px solid navy;
+      border-radius: 6px;
+    }
+    
+    hr {
+      border: 1px solid navy;
+      background-color: navy;
     }
   </style>
 </head>
-<h1>Experiential Learning Dashboard</h1>
+<h1 id="title">Experiential Learning Dashboard</h1>
 <h3 style=text-align:center;>Lacey Irby, Ashton Johnson, Maud Willemse, Maddie Beyer</h3>
-<p>
-  <h2>Project goals</h2>
+<div class="box">
+  <p>
+    <h2>Project goals</h2>
+    <ul>
+      <li>Have a form for users to submit projects</li>
+      <li>Implement security measures for students, faculty, and staff</li>
+      <li>Optional bulk data upload of other departments' databases</li>
+      <li>Have a database with uniform language</li>
+    </ul>
+  </p>
+</div>
+<div class="box">
+  <h2>Approach</h2>
+  <hr>
+  <h3>1. Tools</h3>
   <ul>
-    <li>Have a form for users to submit projects</li>
-    <li>Implement security measures for students, faculty, and staff</li>
-    <li>Optional bulk data upload of other departments' databases</li>
-    <li>Have a database with uniform language</li>
+    <li>Tableau - used for creating dashboards to aid in data visualization and user experience</li>
+    <li>Excel - main utility for database storage</li>
+    <li>MyBama API - used to have faculty, staff, and students log in; possible uses in grabbing existing databases of faculty, staff, and students</li>
+    <li>WordPress - housing unit for all front-end work and Tableau dashboards</li>
+    <li>Python, Javascript, HTML/CSS - main languages being used for creating the Wordpress site</li>
   </ul>
-</p>
-<h2>Approach</h2>
-<h3 style=padding-left:50px;>1. Tools</h3>
-<ul>
-  <li>Tableau - used for creating dashboards to aid in data visualization and user experience</li>
-  <li>Excel - main utility for database storage</li>
-  <li>MyBama API - used to have faculty, staff, and students log in; possible uses in grabbing existing databases of faculty, staff, and students</li>
-  <li>WordPress - housing unit for all front-end work and Tableau dashboards</li>
-  <li>Python, Javascript, HTML/CSS - main languages being used for creating the Wordpress site</li>
-</ul>
-<h3 style=padding-left:50px;>2. User experience</h3>
-<p>This is  a flowchart based on what type of user is interacting with the product.</p>
-<img src="user-scenarios.png" alt="alternatetext">
-<p>All users will be able to access the landing page through the Department of Community Affairs and select the appropriate link based on whether
-  they are a faculty/staff member, student, community member, or someone else looking to explore UA's current projects. </p>
-<p style="text-indent:50px;">A faculty or staff member will be directed to the myBama login. They will then be able to select various areas of interest to them which
-  will be reflected on the faculty/staff explore page. They may also browse the connection dashboard which shows potential community partnership opportunities.
-  To add or edit a project which they own they will be directed to an ELO form with standardized dropdowns and data input. </p>
-<p style="text-indent:50px;">A student will be directed to the myBama login and then be able to select areas of interest to them which will then be reflected
-  on the student dashboard, where they can browse potential ELOs they would like to participate in.</p>
-<p style="text-indent:50px;">A community member seeking partnership with faculty/staff will also be able to select their corresponding areas
-  of interest on the filter page which will be reflected on the community dashboard or submit a partner request form to reach
-  out to a particular faculty/staff member which fits their project needs.</p>
-<p style="text-indent:50px;">Additional users such as prospective students, faculty and staff from other universities, donors, etc. will be
-  able to view all of UAs ongoing EOL opportunities on the explore dashboard.</p>
+  <hr>
+  <h3>2. User experience</h3>
+  <p>This is  a flowchart based on what type of user is interacting with the product.</p>
+  <img src="user-scenarios.png" alt="alternatetext">
+  <p>All users will be able to access the landing page through the Department of Community Affairs and select the appropriate link based on whether
+    they are a faculty/staff member, student, community member, or someone else looking to explore UA's current projects. </p>
+  <p style="text-indent:50px;">A faculty or staff member will be directed to the myBama login. They will then be able to select various areas of interest to them which
+    will be reflected on the faculty/staff explore page. They may also browse the connection dashboard which shows potential community partnership opportunities.
+    To add or edit a project which they own they will be directed to an ELO form with standardized dropdowns and data input. </p>
+  <p style="text-indent:50px;">A student will be directed to the myBama login and then be able to select areas of interest to them which will then be reflected
+    on the student dashboard, where they can browse potential ELOs they would like to participate in.</p>
+  <p style="text-indent:50px;">A community member seeking partnership with faculty/staff will also be able to select their corresponding areas
+    of interest on the filter page which will be reflected on the community dashboard or submit a partner request form to reach
+    out to a particular faculty/staff member which fits their project needs.</p>
+  <p style="text-indent:50px;">Additional users such as prospective students, faculty and staff from other universities, donors, etc. will be
+    able to view all of UAs ongoing EOL opportunities on the explore dashboard.</p>
+</div>
 </html>
