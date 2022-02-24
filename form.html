@@ -1,13 +1,21 @@
 <html>
     <!--Started this super basic form with some of the fields directly from data dictionary just in case.
     Might be totally wrong idk-->
-    
+
     <style>
         div{
-            margin-top: 10px;
-            margin-bottom: 10px;
+            margin-top: 15px;
+            margin-bottom: 15px;
         }
+
+        div.cp{
+             margin-left: 45px;
+        }
+
     </style>
+
+    <h1>Basic HTML Form with Data Dictionary Fields - no CSS formatting or backend yet</h1>
+    <h4>Field names are taken directly from Appendix A Data Dictionary</h4>
     <form>
         <div>
         <label for="project-name">Name :</label>
@@ -24,6 +32,43 @@
             <option value="nursing">Nursing</option>
             <option value="ccs">CCS</option>
             <option value="social-work">Social Work</option>
+        </select>
+        </div>
+
+        <div>
+            <label for="department">Department: </label>
+            <select id="college" name="college">
+                <option value="temp">(This will depend on the college selected)</option>
+            <!--This is going to pull from a database possibly-->
+            </select>
+        </div>
+
+
+        <div>
+            <label for="class-level">Class Level: </label><br>
+            <input type="checkbox" id="100" name="100" value="100">
+            <label for="100">100</label><br>
+            <input type="checkbox" id="200" name="200" value="200">
+            <label for="200">200</label><br>
+            <input type="checkbox" id="300" name="300" value="300">
+            <label for="300">300</label><br>
+            <input type="checkbox" id="400" name="400" value="400">
+            <label for="400">400</label><br>
+        </div>
+
+        <div>
+        <label for="primary-focus">Primary Focus Area: </label>
+        <select id="primary-focus" name="primary-focus">
+        <option value="comm-ed">Community Education</option>
+        <option value="mental-health">Mental Health</option>
+        <option value="international-exp">International Experience</option>
+        <option value="social-issues">Social Issues</option>
+        <option value="natural-sciences">Natural Sciences</option>
+        <option value="healthcare">Healthcare</option>
+        <option value="engineering">Engineering</option>
+        <option value="prof-dev">Professional Development</option>
+        <option value="comm-improvement">Community Improvement</option>
+        <option value="health-well">Health and Wellbeing</option>
         </select>
         </div>
 
@@ -45,6 +90,16 @@
         <div>
             <label for="description">Project Description:</label>
             <input type="text" id="description" name="description">
+        </div>
+
+        <div>
+            <label for="semester">Semester: </label>
+            <select id="semester" name="semester">
+            <option value="spring-2022">Spring 2022</option>
+            <option value="fall-2021">Fall 2021</option>
+            <option value="summer-2021">Summer 2021</option>
+            <option value="spring-2021">Spring 2021</option>
+        </select>
         </div>
 
         <div>
@@ -75,6 +130,166 @@
                 <option value="creative">Creative Opportunity</option>
                 </select>
        </div>
+
+       <div>
+        <label for="university-partner">University Partner: </label>
+        <select id="university-partner" name="university-partner">
+            <option value="temp">(Pulled from database?)</option>
+        <!--This is going to pull from a database possibly-->
+        </select>
+    </div>
+
+    <div>
+        <label for="comm-partner">Working with a community partner?</label>
+        <input type="radio" id="yes" name="comm-partner" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="comm-partner" value="no">
+        <label for="no">No</label>
+    </div>
+
+    <div class="cp">
+        <label for="comm-ie">Community Partner - Internal/External:</label>
+        <input type="radio" id="internal" name="comm-ie" value="internal">
+        <label for="internal">Internal</label>
+        <input type="radio" id="external" name="comm-ie" value="external">
+        <label for="external">External</label>
+    </div>
+
+    <div class="cp">
+        <label for="comm-org">Community Partner - Organization: </label>
+        <input type="text" id="comm-org" name="comm-org">
+    </div>
+
+    <div class="cp">
+        <label for="comm-type">Community Partner - Type: </label>
+        <select id="comm-type" name="comm-type">
+        <option value="business">Business</option>
+        <option value="community">Community</option>
+        <option value="academic-group">Academic group</option>
+        <option value="individual">Individual</option>
+        </select>
+    </div>
+
+
+    <div class="cp">
+        <label for="comm-contact">Community Partner - Contact: </label>
+        <input type="text" id="comm-contact" name="comm-contact">
+    </div>
+
+    <div class="cp">
+        <label for="comm-website">Community Partner - Website: </label>
+        <input type="url" id="comm-website" name="comm-website">
+    </div>
+
+       <div>
+           <label for="num-participants"># of Participants: </label>
+           <input type="number" id="num-participants" name="num-participants" min="1">
+       </div>
+
+       <div>
+        <label for="city">City: </label>
+        <input type="text" id="city" name="city">
+        <label for="state">State: </label>
+        <select id="state" name="state">
+            <option value="alabama">Alabama</option>
+            <option value="alaska">Alaska</option>
+            <option value="arizona">Arizona</option>
+            <option value="arkansas">Arkansas</option>
+            <option value="california">California</option>
+            <option value="colorado">Colorado</option>
+            <option value="connecticut">Connecticut</option>
+            <option value="delaware">Delaware</option>
+            <option value="dc">District of Columbia</option>
+            <option value="florida">Florida</option>
+            <option value="georgia">Georgia</option>
+            <option value="guam">Guam</option>
+            <option value="hawaii">Hawaii</option>
+            <option value="idaho">Idaho</option>
+            <option value="illinois">Illinois</option>
+            <option value="indiana">Indiana</option>
+            <option value="iowa">Iowa</option>
+            <option value="kansas">Kansas</option>
+            <option value="kentucky">Kentucky</option>
+            <option value="louisiana">Louisiana</option>
+            <option value="maine">Maine</option>
+            <option value="maryland">Maryland</option>
+            <option value="massachusetts">Massachusetts</option>
+            <option value="michigan">Michigan</option>
+            <option value="minnesota">Minnesota</option>
+            <option value="mississippi">Mississippi</option>
+            <option value="missouri">Missouri</option>
+            <option value="montana">Montana</option>
+            <option value="nebraska">Nebraska</option>
+            <option value="nevada">Nevada</option>
+            <option value="new-hampshire">New Hampshire</option>
+            <option value="new-jersey">New Jersey</option>
+            <option value="new-mexico">New Mexico</option>
+            <option value="new-york">New York</option>
+            <option value="north-carolina">North Carolina</option>
+            <option value="ohio">Ohio</option>
+            <option value="oklahoma">Oklahoma</option>
+            <option value="oregon">Oregon</option>
+            <option value="pennsylvania">Pennsylvania</option>
+            <option value="puerto-rico">Puerto Rico</option>
+            <option value="rhode-island">Rhode Island</option>
+            <option value="south-carolina">South Carolina</option>
+            <option value="south-dakota">South Dakota</option>
+            <option value="tennessee">Tennessee</option>
+            <option value="texas">Texas</option>
+            <option value="utah">Utah</option>
+            <option value="vermont">Vermont</option>
+            <option value="vi">Virgin Islands</option>
+            <option value="virginia">Virginia</option>
+            <option value="washington">Washington</option>
+            <option value="west-virginia">West Virginia</option>
+            <option value="wisconsin">Wisconsin</option>
+            <option value="wyoming">Wyoming</option>
+        </select>
+        <label for="city">Country: </label>
+        <input type="text" id="city" name="city">
+      </div>
+
+      <div>
+        <label for="mode">Mode: </label><br>
+        <input type="checkbox" id="in-person" name="in-person" value="in-person">
+        <label for="in-person">In person</label><br>
+        <input type="checkbox" id="virtual" name="virtual" value="virtual">
+        <label for="virtual">Virtual</label><br>
+        <input type="checkbox" id="hybrid" name="hybrid" value="hybrid">
+        <label for="hybrid">Hybrid</label><br>
+    </div>
+
+      <div>
+        <label for="impact">Impact: </label>
+            <select id="impact" name="impact">
+            <option value="economic-dev">Economic Development</option>
+            <option value="comm-outreach">Community Outreach</option>
+            <option value="advanced-research">Advanced Research</option>
+            <option value="academic-programs">Academic Programs</option>
+            </select>
+
+            <label for="outreach">Outreach:</label>
+            <input type="text" id="outreach" name="outreach">
+          
+        </div>
+
+        <div>
+            <label for="financing">Financing: </label>
+                <select id="financing" name="financing">
+                <option value="grant">Grant</option>
+                <option value="donation">Donation</option>
+                <option value="other">Other</option>
+                </select>
+            </div>
+
+    <div>
+        <label for="cost-student">Cost to Student:</label>
+        <input type="text" id="cost-student" name="cost-student">
+        <label for="cost-ua">Cost to UA Partner :</label>
+        <input type="text" id="cost-ua" name="cost-ua">
+        <label for="cost-comm">Cost to Community Partner :</label>
+        <input type="text" id="cost-comm" name="cost-comm">
+    </div>
 
        <div>
         <label for="time-commitment">Time Commitment: </label>
