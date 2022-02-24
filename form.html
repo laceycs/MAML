@@ -1,0 +1,105 @@
+<html>
+    <!--Started this super basic form with some of the fields directly from data dictionary just in case.
+    Might be totally wrong idk-->
+    
+    <style>
+        div{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+    <form>
+        <div>
+        <label for="project-name">Name :</label>
+        <input type="text" id="project-name" name="project-name">
+        
+        <label for="college">College: </label>
+            <select id="college" name="college">
+            <option value="hes">HES</option>
+            <option value="as">A&S</option>
+            <option value="business">Business</option>
+            <option value="engineering">Engineering</option>
+            <option value="cis">C&IS</option>
+            <option value="education">Education</option>
+            <option value="nursing">Nursing</option>
+            <option value="ccs">CCS</option>
+            <option value="social-work">Social Work</option>
+        </select>
+        </div>
+
+        <div>
+            <label for="academic-level">Academic Level: </label>
+            <input type="checkbox" id="undergraduate" name="undergraduate" value="Undergraduate">
+            <label for="undergrad"> Undergraduate </label>
+            <input type="checkbox" id="graduate" name="graduate" value="Graduate">
+            <label for="vehicle2"> Graduate </label>
+        </div>
+
+        <div>
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" name="start-date">
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" name="end-date">
+        </div>
+
+        <div>
+            <label for="description">Project Description:</label>
+            <input type="text" id="description" name="description">
+        </div>
+
+        <div>
+            <label for="status">Status:</label>
+            <input type="radio" id="active" name="status" value="active">
+            <label for="active">Active</label>
+            <input type="radio" id="inactive" name="status" value="inactive">
+            <label for="inactive">Inactive</label>
+        </div>
+
+        <div>
+            <label for="compensation">Compensation:</label>
+            <input type="radio" id="paid" name="compensation" value="paid">
+            <label for="active">Paid</label>
+            <input type="radio" id="unpaid" name="compensation" value="unpaid">
+            <label for="inactive">Unpaid</label>
+        </div>
+
+        <div>
+            <label for="opportunity-type">Opportunity Type: </label>
+                <select id="opportunity-type" name="opportunity-type">
+                <option value="co-op">Co-op</option>
+                <option value="internship">Internship</option>
+                <option value="course">Course</option>
+                <option value="Volunteer">Volunteer</option>
+                <option value="study-abroad">Study Abroad</option>
+                <option value="research">Research</option>
+                <option value="creative">Creative Opportunity</option>
+                </select>
+       </div>
+
+       <div>
+        <label for="time-commitment">Time Commitment: </label>
+            <select id="time-commitment" name="time-commitment">
+            <option value="week">Week</option>
+            <option value="month">Month</option>
+            <option value="semester">Semester</option>
+            <option value="year-long">Year-Long</option>
+            <option value="continuous">Continuous</option>
+            <option value="single">Single</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="admission-type">Admission type: </label>
+                <select id="admission-type" name="admission-type">
+                <option value="continuous-enroll">Continuous Enrollment</option>
+                <option value="semester-enroll">Semester Enrollment</option>
+                <option value="application">Application</option>
+                <option value="interview">Interview</option>
+                </select>
+            </div>
+
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</html>
