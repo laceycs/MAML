@@ -1,3 +1,3 @@
 # https://laceycs.github.io/MAML/
-# Wait a few minutes after you commit if you changed the index.html
-# CSS at the top of index.html (ignore the styles.css file)
+# Our project is on Wordpress, this is just our website for project documentation.
+# We do not have anything to test on Github for this sprint.
