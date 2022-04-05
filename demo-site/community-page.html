@@ -83,6 +83,40 @@
       text-align:center;
     }
 
+    
+    div{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        div.cp1, div.cp2, div.cp3, div.cp4{
+             margin-left: 45px;
+        }
+
+    
+        input, select{
+        border-top-width: 0px;
+		    border-right-width: 0px;
+		    border-bottom-width: 1px;
+		    border-left-width: 0px;
+        }
+
+    
+        form {
+          background-color:rgb(240, 270, 275);      
+          color:black;
+          padding:20px;
+          margin:10px;
+        }
+
+        input {
+          color:darkslategray;
+          padding:5px;
+          margin:10px;
+          border: 0.5px solid gray;
+          border-radius: 10%;
+        }
+
     .cp-1{
       display: none;
     }
@@ -121,7 +155,13 @@
 <img src="images/consultation.png" alt="consultation-banner">
 </div>
 </section>
+
+<p>Thank you for your interest in connecting with the Divison of Community Affairs to discuss and promote opportunities related to service learning, civic engagement, and engaged learning. 
+  Once you have completed this form, a CSL staff member will reach out to you with relevant next steps depending on your responses.</p>
     <form>
+      <div>
+        <h2>Community Partner Consultation Form</h2>
+      </div>
       <div>
         <label for="first-name">First Name :</label>
         <input type="text" id="first-name" name="first-name">
@@ -131,22 +171,23 @@
 
       <div>
         <label for="user-type">I am a...</label>
-        <select name="user-type" id="user-type">
+        <select style="height:30px;width:250px;" name="user-type" id="user-type">
+          <option hidden disabled selected value> </option>
           <option value="faculty">UA Faculty Member</option>
           <option value="staff">UA Staff Member</option>
-          <option value=comm-partner">Community Partner</option>
+          <option value="comm-partner">Community Partner</option>
           <option vakue="student">UA Student/Student Organization</option>
         </select>
       </div>
 
       <div>
-        <label for="organization">Organization Name:</label>
-        <input type="text" id="first-name" name="first-name">  
+        <label for="organization">Organization Name:</label><br>
+        <input style="width:300px;"type="text" id="first-name" name="first-name">  
       </div>
 
       <div>
-        <label for="email">Email Address: </label>
-        <input type="email" id="email">
+        <label for="email">Email Address: </label><br>
+        <input style="width:300px;" type="email" id="email">
       </div>
 
       <div>
@@ -166,24 +207,25 @@
       </div>
 
       <div>
-        <label for="skills-majors">Please indicate if there are any specific skills desired in an applicant for this position, as well as if there are majors or areas of study preferred. </label>
-        <input type="text" id="skills-majors" name="skills-majors">
+        <label for="skills-majors">Please indicate if there are any specific skills desired in an applicant for this position, as well as if there are majors or areas of study preferred. </label><br>
+        <input style="width:400px;"type="text" id="skills-majors" name="skills-majors">
       </div>
 
       <div>
-        <label for="num-volunteers">How many volunteers do you require per shift?</label>
+        <label for="num-volunteers">How many volunteers do you require per shift?</label><br>
         <input type="number" id="num-volunteers" name="num-volunteers">
       </div>
       </div>
 
       <div class="cp-2">
         <div>
-          <label for="project-name">Title of Position or Project: </label>
-          <input type="text" id="project-name" name="project-name">
+          <label for="project-name">Title of Position or Project: </label><br>
+          <input style="width:300px;"type="text" id="project-name" name="project-name">
         </div>
   
         <div>
-          <label for="project-location">Project Location: </label>
+          <label for="project-location">Project Location: </label><br>
+          <input style="width:300px;" type="text" id="project-location" name="project-location">
         </div>
   
         <div>
@@ -194,12 +236,12 @@
         </div>
   
         <div>
-          <label for="skills-majors">Please indicate if there are any specific skills desired in an applicant for this position, as well as if there are majors or areas of study preferred. </label>
-          <input type="text" id="skills-majors" name="skills-majors">
+          <label for="skills-majors">Please indicate if there are any specific skills desired in an applicant for this position, as well as if there are majors or areas of study preferred. </label><br>
+          <input style="width:400px;" type="text" id="skills-majors" name="skills-majors">
         </div>
   
         <div>
-          <label for="start-date">Anticipated Start Date:</label>
+          <label for="start-date">Anticipated Start Date:</label><br>
           <input type="date" id="start-date" name="start-date">
         </div>
   
@@ -214,20 +256,20 @@
         </div>
   
         <div>
-          <label for="num-volunteers">How many volunteers do you require per shift?</label>
+          <label for="num-volunteers">How many volunteers do you require per shift?</label><br>
           <input type="number" id="num-volunteers" name="num-volunteers">
         </div>
       </div>
 
       <div class="cp-3">
         <div>
-          <label for="skills-majors">Please indicate if there are any specific skills desired in an applicant for this position, as well as if there are majors or areas of study preferred. </label>
-          <input type="text" id="skills-majors" name="skills-majors">
+          <label for="skills-majors">Please indicate if there are any specific skills desired in an applicant for this position, as well as if there are majors or areas of study preferred. </label><br>
+          <input style="width:400px;"type="text" id="skills-majors" name="skills-majors">
         </div>
   
         <div>
-          <label for="event-title">Event/Opportunity Title </label>
-          <input type="text" id="event-title" name="event-title">
+          <label for="event-title">Event/Opportunity Title: </label><br>
+          <input style="width:300px;"type="text" id="event-title" name="event-title">
         </div>
   
         <div>
@@ -238,12 +280,12 @@
         </div>
   
         <div>
-          <label for="start-date">Start Date:</label>
+          <label for="start-date">Start Date:</label><br>
           <input type="date" id="start-date" name="start-date">
         </div>
   
         <div>
-          <label for="end-date">End Date:</label>
+          <label for="end-date">End Date:</label><br>
           <input type="date" id="end-date" name="end-date">
         </div>
   
@@ -255,12 +297,13 @@
         </div>
   
         <div>
-          <label for="address">Address: </label>
-          <input type="text" id="address" name="address">
-          <label for="city">City: </label>
-          <input type="text" id="city" name="city">
-          <label for="state">State: </label>
-          <select class="group" id="state" name="state">
+          <label>Event/Opportunity Location: </label><br>
+          <label style="margin-left:30px;"for="address">Address: </label>
+          <input style="width:250px;" type="text" id="address" name="address"><br>
+          <label style="margin-left:30px;margin-right:30px;" for="city">City: </label>
+          <input type="text" id="city" name="city"><br>
+          <label style="margin-left:30px;margin-right:30px;" for="state">State: </label>
+          <select style="height:26px;width:150px;" class="group" id="state" name="state">
             <option hidden disabled selected value> </option>
             <option value="alabama">Alabama</option>
             <option value="alaska">Alaska</option>
@@ -316,29 +359,29 @@
             <option value="wisconsin">Wisconsin</option>
             <option value="wyoming">Wyoming</option>
           </select><br>
-          <label for="country">Country: </label>
+          <label style="margin-left:30px;"for="country">Country: </label>
           <input type="text" id="country" name="country">
         </div>
   
         <div>
-          <label for="num-volunteers">How many volunteers do you require per shift?</label>
+          <label for="num-volunteers">How many volunteers do you require per shift?</label><br>
           <input type="number" id="num-volunteers" name="num-volunteers">
         </div>
   
         <div>
-          <label for="sign-up">If you have a sign-up form that you would like volunteers to use to sign up, please include that link here.</label>
-          <input type="url" name="sign-up" id="sign-up">
+          <label for="sign-up">If you have a sign-up form that you would like volunteers to use to sign up, please include that link here.</label><br>
+          <input style="width:350px;"type="url" name="sign-up" id="sign-up">
         </div>
       </div>
 
       <div class="cp-4">
         <div>
-          <label for="skills-majors">Please indicate if there are any specific skills desired in an applicant for this position, as well as if there are majors or areas of study preferred. </label>
-          <input type="text" id="skills-majors" name="skills-majors">
+          <label for="skills-majors">Please indicate if there are any specific skills desired in an applicant for this position, as well as if there are majors or areas of study preferred. </label><br>
+          <input style="width:400px;" type="text" id="skills-majors" name="skills-majors">
         </div>
   
         <div>
-          <label for="num-volunteers">How many volunteers do you require per shift?</label>
+          <label for="num-volunteers">How many volunteers do you require per shift?</label><br>
           <input type="number" id="num-volunteers" name="num-volunteers">
         </div>
   
@@ -349,7 +392,7 @@
                   name="other-needs"></textarea>
         </div>
       </div>
-
+      
       <div>
         <input type="submit" value="Submit">
       </div>
