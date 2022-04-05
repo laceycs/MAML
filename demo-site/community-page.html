@@ -179,7 +179,7 @@
 
       <div>
         <label for="organization">Organization Name:</label><br>
-        <input style="width:300px;"type="text" id="first-name" name="first-name">  
+        <input style="width:300px;"type="text" id="organization" name="organization">  
       </div>
 
       <div>
@@ -189,10 +189,10 @@
 
       <div>
         <label for="partnership-needs">What statement most represents your partnership needs?</label><br>
-          <input type="radio" value="option1" name="partnership-needs" onclick="optionOne();">I am interested in pursuing a research or service project with a class and UA faculty member, student organization, or a community organization.</input><br>
-          <input type="radio" value="option2" name="partnership-needs" onclick="optionTwo();">I have an internship or full-time job opportunities to promote.</input><br>
-          <input type="radio" value="option3" name="partnership-needs" onclick="optionThree();">I have volunteer opportunities to promote.</input><br>
-          <input type="radio" value="option4" name="partnership-needs" onclick="optionFour();">I'm looking for something else.</input>
+          <input type="radio" value="option1" id="partnership-needs" name="partnership-needs" onclick="optionOne();">I am interested in pursuing a research or service project with a class and UA faculty member, student organization, or a community organization.</input><br>
+          <input type="radio" value="option2" id="partnership-needs" name="partnership-needs" onclick="optionTwo();">I have an internship or full-time job opportunities to promote.</input><br>
+          <input type="radio" value="option3" id="partnership-needs" name="partnership-needs" onclick="optionThree();">I have volunteer opportunities to promote.</input><br>
+          <input type="radio" value="option4" id="partnership-needs" name="partnership-needs" onclick="optionFour();">I'm looking for something else.</input>
       </div>
 
       <div class="cp-1">
@@ -204,13 +204,13 @@
       </div>
 
       <div>
-        <label for="skills-majors">Please indicate if there are any specific skills desired in an applicant for this position, as well as if there are majors or areas of study preferred. </label><br>
-        <input style="width:400px;"type="text" id="skills-majors" name="skills-majors">
+        <label for="skills-majors-1">Please indicate if there are any specific skills desired in an applicant for this position, as well as if there are majors or areas of study preferred. </label><br>
+        <input style="width:400px;"type="text" id="skills-majors-1" name="skills-majors-1">
       </div>
 
       <div>
-        <label for="num-volunteers">How many volunteers do you require per shift?</label><br>
-        <input type="number" id="num-volunteers" name="num-volunteers">
+        <label for="num-volunteers-1">How many volunteers do you require per shift?</label><br>
+        <input type="number" id="num-volunteers-1" name="num-volunteers-1">
       </div>
       </div>
 
@@ -233,8 +233,8 @@
         </div>
   
         <div>
-          <label for="skills-majors">Please indicate if there are any specific skills desired in an applicant for this position, as well as if there are majors or areas of study preferred. </label><br>
-          <input style="width:400px;" type="text" id="skills-majors" name="skills-majors">
+          <label for="skills-majors-2">Please indicate if there are any specific skills desired in an applicant for this position, as well as if there are majors or areas of study preferred. </label><br>
+          <input style="width:400px;" type="text" id="skills-majors-2" name="skills-majors-2">
         </div>
   
         <div>
@@ -253,15 +253,15 @@
         </div>
   
         <div>
-          <label for="num-volunteers">How many volunteers do you require per shift?</label><br>
-          <input type="number" id="num-volunteers" name="num-volunteers">
+          <label for="num-volunteers-2">How many volunteers do you require per shift?</label><br>
+          <input type="number" id="num-volunteers-2" name="num-volunteers-2">
         </div>
       </div>
 
       <div class="cp-3">
         <div>
-          <label for="skills-majors">Please indicate if there are any specific skills desired in an applicant for this position, as well as if there are majors or areas of study preferred. </label><br>
-          <input style="width:400px;"type="text" id="skills-majors" name="skills-majors">
+          <label for="skills-majors-3">Please indicate if there are any specific skills desired in an applicant for this position, as well as if there are majors or areas of study preferred. </label><br>
+          <input style="width:400px;"type="text" id="skills-majors-3" name="skills-majors-3">
         </div>
   
         <div>
@@ -277,8 +277,8 @@
         </div>
   
         <div>
-          <label for="start-date">Start Date:</label><br>
-          <input type="date" id="start-date" name="start-date">
+          <label for="start-date-3">Start Date:</label><br>
+          <input type="date" id="start-date-3" name="start-date-3">
         </div>
   
         <div>
@@ -361,8 +361,8 @@
         </div>
   
         <div>
-          <label for="num-volunteers">How many volunteers do you require per shift?</label><br>
-          <input type="number" id="num-volunteers" name="num-volunteers">
+          <label for="num-volunteers-3">How many volunteers do you require per shift?</label><br>
+          <input type="number" id="num-volunteers-3" name="num-volunteers-3">
         </div>
   
         <div>
@@ -373,13 +373,13 @@
 
       <div class="cp-4">
         <div>
-          <label for="skills-majors">Please indicate if there are any specific skills desired in an applicant for this position, as well as if there are majors or areas of study preferred. </label><br>
-          <input style="width:400px;" type="text" id="skills-majors" name="skills-majors">
+          <label for="skills-majors-4">Please indicate if there are any specific skills desired in an applicant for this position, as well as if there are majors or areas of study preferred. </label><br>
+          <input style="width:400px;" type="text" id="skills-majors-4" name="skills-majors-4">
         </div>
   
         <div>
-          <label for="num-volunteers">How many volunteers do you require per shift?</label><br>
-          <input type="number" id="num-volunteers" name="num-volunteers">
+          <label for="num-volunteers-4">How many volunteers do you require per shift?</label><br>
+          <input type="number" id="num-volunteers-4" name="num-volunteers-4">
         </div>
   
         <div>
@@ -391,12 +391,16 @@
       </div>
       
       <div>
-        <input style="width:150px;" type="submit" value="Submit Form">
+        <input style="width:150px;" type="button" id="submit" value="Submit Form" onclick="showInput();">
       </div>
 
     </form>
 
+    <p><span id='display'></span></p>
+
     <script>
+
+      var x = 0;
       function enableVizClass(cl) {
         Array.from(document.getElementsByClassName(cl)).forEach(
         function(element, index, array) {
@@ -418,6 +422,7 @@
           disableVizClass('cp-2');
           disableVizClass('cp-3');
           disableVizClass('cp-4');
+          x = 1;
       }
       
       function optionTwo() {
@@ -425,6 +430,7 @@
           enableVizClass('cp-2');
           disableVizClass('cp-3');
           disableVizClass('cp-4');
+          x = 2;
       }
 
 
@@ -433,6 +439,7 @@
           disableVizClass('cp-2');
           enableVizClass('cp-3');
           disableVizClass('cp-4');
+          x = 3;
       }
 
       function optionFour() {
@@ -440,7 +447,45 @@
           disableVizClass('cp-2');
           disableVizClass('cp-3');
           enableVizClass('cp-4');
+          x = 4;
       }
 
+      function showInput() {
+             console.log("First Name: " + document.getElementById("first-name").value);
+             console.log("Last Name: " + document.getElementById("last-name").value);
+             console.log("User: " + document.getElementById("user-type").value);
+             console.log("Organization: " + document.getElementById("organization").value);
+             console.log("Email: " + document.getElementById("email").value);
+             console.log("Partnership: " + document.getElementById("partnership-needs").value);
+
+             if(x==1){
+              console.log("Description: " + document.getElementById("description").value);
+              console.log("Skills/majors: " + document.getElementById("skills-majors-1").value);
+              console.log("Num volunteers: " + document.getElementById("num-volunteers-1").value);
+             }
+             if(x==2){
+              console.log("Project Name: " + document.getElementById("project-name").value);
+              console.log("Location : " + document.getElementById("project-location").value);
+              console.log("Job description: " + document.getElementById("job-description").value);
+              console.log("Skills/majors: " + document.getElementById("skills-majors-2").value);
+              console.log("Start Date: " + document.getElementById("start-date").value);
+              console.log("Num volunteers: " + document.getElementById("num-volunteers-2").value);
+             }
+             if(x==3){
+              console.log("Skills/majors: " + document.getElementById("skills-majors-3").value);
+              console.log("Event Title: " + document.getElementById("event-title").value);
+              console.log("Event Description: " + document.getElementById("event-description").value);
+              console.log("Start Date: " + document.getElementById("start-date-3").value);
+              console.log("End Date: " + document.getElementById("end-date").value);
+              console.log("Shifts: " + document.getElementById("shifts").value);
+              console.log("Num volunteers: " + document.getElementById("num-volunteers-3").value);
+              console.log("Sign up link: " + document.getElementById("sign-up").value);
+             }
+             if(x==4){
+              console.log("Skills/majors: " + document.getElementById("skills-majors-4").value);
+              console.log("Num volunteers:  " + document.getElementById("num-volunteers-4").value);
+              console.log("Other Needs: " + document.getElementById("other-needs").value);
+             }
+        }
   </script>
 </html>
