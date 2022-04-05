@@ -1,5 +1,4 @@
 <html>
-    <title>Engaged Learning Dashboard</title>
     <style>
         body {
           background-color: white;
@@ -76,13 +75,27 @@
           color:#9E1B32;
         }
         img {
-          width:100%
+          width:100%;
         }
-        .about {
+        .options{
           padding-left:50px;
           padding-right:50px;
           text-align:center;
         }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 80px;
+        }
+
+        /* Clear floats after image containers */
+        .row::after {
+        content: "";
+        clear: both;
+        display: table;
+
+    }
     </style>
     <!-- NAV BAR -->
     <nav>
@@ -104,15 +117,16 @@
 </ul>
 <section class = "welcome">
   <div class = "intro">
-    <img src="images/welcome_ELO.png" alt="welcome">
+    <img src="images/faculty-banner.png" alt="faculty-banner">
 </div>
 </section>
-<section class = "about">
-    <p><b>Engaged Learning Opportunities</b> are hands-on, mutually beneficial partnerships between local communities and UA. All ELOs include a learner (student), an educator, a real-world context, and a reflection. Examples of specific ELOs include internships, co-ops, course projects, study abroad programs, and extracurricular student organization-based activities. Explore a wide variety of ELOs below.</p>
-    <h4 style="color:#9E1B32;"><b>Engaged learning encourages diverse perspectives and student investment in their own education.</b></h4>
-  </section>
-<section class = "welcome">
-  <img src="images/stats-main_page.png" alt="stats">
-</section>
+<div class="row">
+    <div class="column">
+      <img src="images/connect-with-partner-icon.png" alt="" style="width:100%;border:none;">
+    </div>
+    <div class="column">
+      <img src="images/manage-elos-icon.png" alt="" style="width:100%;border:none;width:300px;">
+    </div>
+  </div>
 
 </html>
