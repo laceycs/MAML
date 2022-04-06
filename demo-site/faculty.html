@@ -1,0 +1,490 @@
+
+<html>
+  <style>
+    body {
+      background-color: white;
+      font-family: sans-serif;
+      width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .box {
+      background-color: #ecdede;
+      border: 3px solid #6c2129;
+      border-radius: 6px;
+      margin-bottom: 30px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    #title {
+      margin: auto;
+      background-color: #ecdede;
+      color: #6c2129;
+      width: 50%;
+      border: 3px solid #6c2129;
+      border-radius: 6px;
+      padding: 10px;
+      text-align: center;
+    }
+    h3, h2 {
+      color: #010101;
+      margin-left: 30px;
+    }
+    p {
+      color: #181818;
+      margin-left: 30px;
+    }
+    
+    ul {
+      margin-left: 50px;
+    }
+    
+    img {
+      margin-left: 30px;
+      border: 3px solid #7a292f;
+      border-radius: 6px;
+    }
+    
+    hr {
+      border: 1px solid #7a292f;
+      background-color: #7a292f;
+      }
+    ul li {
+      list-style-type: none;
+    }
+      nav {
+        display: flex;
+        align-items: center;
+        padding: 1rem 1.5rem;
+      }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-item {
+      margin-left: 2rem;
+    }
+
+    .nav-link {
+      font-size:20px;
+      color:#9E1B32;
+    }
+    img {
+      width:100%
+    }
+    .about {
+      padding-left:50px;
+      padding-right:50px;
+      text-align:center;
+    }
+
+    
+    div{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        div.cp1, div.cp2, div.cp3, div.cp4{
+             margin-left: 45px;
+        }
+
+    
+        input, select{
+        border-top-width: 0px;
+		    border-right-width: 0px;
+		    border-bottom-width: 1px;
+		    border-left-width: 0px;
+        }
+
+    
+        form {
+          background-color: rgb(240, 270, 275);
+          color:#181818;
+          padding:20px;
+          margin:10px;
+          width:990px;
+        }
+
+        input {
+          color:darkslategray;
+          padding:5px;
+          margin:10px;
+          border: 0.5px solid gray;
+          border-radius: 10%;
+        }
+
+    .cp-1{
+      display: none;
+    }
+    .cp-2{
+      display: none;
+    }
+    .cp-3{
+      display: none;
+    }
+    .cp-4{
+      display: none;
+    }
+
+
+</style>
+<!-- NAV BAR -->
+<nav>
+  <h3 style="color:#9E1B32; font-size:24px"><i>Division of </i><b>Community Affairs</b></h3>
+<ul>
+  <li class="nav-item">
+    <a href="index.html" class="nav-link" id="nav-link">Explore</a>
+  </li>
+  <li class="nav-item">
+    <a href="#students" class="nav-link" id="nav-link">Students</a>
+  </li>
+  <li class="nav-item">
+    <a href="faculty-main-page.html" class="nav-link" id="nav-link">Faculty & Staff</a>
+  </li>
+  <li class="nav-item">
+    <a href="community-page.html" class="nav-link" id="nav-link">Community Partners</a>
+  </li>
+</nav>
+</ul>
+<section class = "consultation-banner">
+<div class = "consultation">
+<img src="images/consultation.png" alt="consultation-banner">
+</div>
+</section>
+<div>
+  <p style="margin-top:30px;margin-bottom:30px;">Thank you for your interest in connecting with the Divison of Community Affairs to discuss and promote opportunities related to service learning, civic engagement, and engaged learning.
+    Once you have completed this form, a staff member will reach out to you with relevant next steps depending on your responses.</p>
+  <hr style="margin-bottom:50px;margin-top:50px;">
+</div>
+
+    <form>
+      <div>
+        <label for="first-name">First Name :</label>
+        <input type="text" id="first-name" name="first-name">
+        <label for="last-name">Last Name :</label>
+        <input type="text" id="last-name" name="last-name">
+      </div>
+
+      <div>
+        <label for="user-type">I am a...</label>
+        <select style="height:30px;width:250px;" name="user-type" id="user-type">
+          <option hidden disabled selected value> </option>
+          <option value="faculty">UA Faculty Member</option>
+          <option value="staff">UA Staff Member</option>
+          <option value="comm-partner">Community Partner</option>
+          <option vakue="student">UA Student/Student Organization</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="organization">Organization Name:</label><br>
+        <input style="width:300px;"type="text" id="organization" name="organization">
+      </div>
+
+      <div>
+        <label for="email">Email Address: </label><br>
+        <input style="width:300px;" type="email" id="email">
+      </div>
+
+      <div>
+        <label for="partnership-needs">What statement most represents your partnership needs?</label><br>
+          <input type="radio" value="option1" id="partnership-needs" name="partnership-needs" onclick="optionOne();">I am interested in pursuing a research or service project with a class and UA faculty member, student organization, or a community organization.</input><br>
+          <input type="radio" value="option2" id="partnership-needs" name="partnership-needs" onclick="optionTwo();">I have an internship or full-time job opportunities to promote.</input><br>
+          <input type="radio" value="option3" id="partnership-needs" name="partnership-needs" onclick="optionThree();">I have volunteer opportunities to promote.</input><br>
+          <input type="radio" value="option4" id="partnership-needs" name="partnership-needs" onclick="optionFour();">I'm looking for something else.</input>
+      </div>
+
+      <div class="cp-1">
+      <div>
+      <label for="description">Please describe your research/service project interests and how you would like to partner with faculty, staff, or a community organization. Please include a timeline for project completion, if you have one.</label><br>
+			&emsp;<textarea wrap="soft" cols="50" rows="8" maxlength="1000"
+			          id="description"
+			          name="description"></textarea>
+      </div>
+
+      <div>
+        <label for="skills-majors-1">Please indicate if there are any specific skills desired in an applicant for this position, as well as if there are majors or areas of study preferred. </label><br>
+        <input style="width:400px;"type="text" id="skills-majors-1" name="skills-majors-1">
+      </div>
+
+      <div>
+        <label for="num-volunteers-1">How many volunteers do you require per shift?</label><br>
+        <input type="number" id="num-volunteers-1" name="num-volunteers-1">
+      </div>
+      </div>
+
+      <div class="cp-2">
+        <div>
+          <label for="project-name">Title of Position or Project: </label><br>
+          <input style="width:300px;"type="text" id="project-name" name="project-name">
+        </div>
+  
+        <div>
+          <label for="project-location">Project Location: </label><br>
+          <input style="width:300px;" type="text" id="project-location" name="project-location">
+        </div>
+  
+        <div>
+          <label for="job-description">Job Description: </label><br>
+        &emsp;<textarea wrap="soft" cols="50" rows="8" maxlength="1000"
+                  id="job-description"
+                  name="job-description"></textarea>
+        </div>
+  
+        <div>
+          <label for="skills-majors-2">Please indicate if there are any specific skills desired in an applicant for this position, as well as if there are majors or areas of study preferred. </label><br>
+          <input style="width:400px;" type="text" id="skills-majors-2" name="skills-majors-2">
+        </div>
+  
+        <div>
+          <label for="start-date">Anticipated Start Date:</label><br>
+          <input type="date" id="start-date" name="start-date">
+        </div>
+  
+        <div>
+          <label>Required Documents: </label><br>
+        &emsp;<input type="checkbox" id="cover-letter" name="cover-letter" value="cover-letter">
+        <label for="cover-letter">Cover Letter</label><br>
+        &emsp;<input type="checkbox" id="writing-sample" name="writing-sample" value="writing-sample">
+        <label for="writing-sample">Writing Sample</label><br>
+        &emsp;<input type="checkbox" id="other" name="other" value="other">
+        <label for="other">Other</label><br>
+        </div>
+  
+        <div>
+          <label for="num-volunteers-2">How many volunteers do you require per shift?</label><br>
+          <input type="number" id="num-volunteers-2" name="num-volunteers-2">
+        </div>
+      </div>
+
+      <div class="cp-3">
+        <div>
+          <label for="skills-majors-3">Please indicate if there are any specific skills desired in an applicant for this position, as well as if there are majors or areas of study preferred. </label><br>
+          <input style="width:400px;"type="text" id="skills-majors-3" name="skills-majors-3">
+        </div>
+  
+        <div>
+          <label for="event-title">Event/Opportunity Title: </label><br>
+          <input style="width:300px;"type="text" id="event-title" name="event-title">
+        </div>
+  
+        <div>
+          <label for="event-description">Event/Opportunity Description: </label><br>
+        &emsp;<textarea wrap="soft" cols="50" rows="8" maxlength="1000"
+                  id="event-description"
+                  name="event-description"></textarea>
+        </div>
+  
+        <div>
+          <label for="start-date-3">Start Date:</label><br>
+          <input type="date" id="start-date-3" name="start-date-3">
+        </div>
+  
+        <div>
+          <label for="end-date">End Date:</label><br>
+          <input type="date" id="end-date" name="end-date">
+        </div>
+  
+        <div>
+          <label for="shifts">Include dates and times of shifts if applicable: </label><br>
+        &emsp;<textarea wrap="soft" cols="50" rows="8" maxlength="1000"
+                  id="shifts"
+                  name="shifts"></textarea>
+        </div>
+  
+        <div>
+          <label>Event/Opportunity Location: </label><br>
+          <label style="margin-left:30px;"for="address">Address: </label>
+          <input style="width:250px;" type="text" id="address" name="address"><br>
+          <label style="margin-left:30px;margin-right:30px;" for="city">City: </label>
+          <input type="text" id="city" name="city"><br>
+          <label style="margin-left:30px;margin-right:30px;" for="state">State: </label>
+          <select style="height:26px;width:150px;" class="group" id="state" name="state">
+            <option hidden disabled selected value> </option>
+            <option value="alabama">Alabama</option>
+            <option value="alaska">Alaska</option>
+            <option value="arizona">Arizona</option>
+            <option value="arkansas">Arkansas</option>
+            <option value="california">California</option>
+            <option value="colorado">Colorado</option>
+            <option value="connecticut">Connecticut</option>
+            <option value="delaware">Delaware</option>
+            <option value="dc">District of Columbia</option>
+            <option value="florida">Florida</option>
+            <option value="georgia">Georgia</option>
+            <option value="guam">Guam</option>
+            <option value="hawaii">Hawaii</option>
+            <option value="idaho">Idaho</option>
+            <option value="illinois">Illinois</option>
+            <option value="indiana">Indiana</option>
+            <option value="iowa">Iowa</option>
+            <option value="kansas">Kansas</option>
+            <option value="kentucky">Kentucky</option>
+            <option value="louisiana">Louisiana</option>
+            <option value="maine">Maine</option>
+            <option value="maryland">Maryland</option>
+            <option value="massachusetts">Massachusetts</option>
+            <option value="michigan">Michigan</option>
+            <option value="minnesota">Minnesota</option>
+            <option value="mississippi">Mississippi</option>
+            <option value="missouri">Missouri</option>
+            <option value="montana">Montana</option>
+            <option value="nebraska">Nebraska</option>
+            <option value="nevada">Nevada</option>
+            <option value="new-hampshire">New Hampshire</option>
+            <option value="new-jersey">New Jersey</option>
+            <option value="new-mexico">New Mexico</option>
+            <option value="new-york">New York</option>
+            <option value="north-carolina">North Carolina</option>
+            <option value="ohio">Ohio</option>
+            <option value="oklahoma">Oklahoma</option>
+            <option value="oregon">Oregon</option>
+            <option value="pennsylvania">Pennsylvania</option>
+            <option value="puerto-rico">Puerto Rico</option>
+            <option value="rhode-island">Rhode Island</option>
+            <option value="south-carolina">South Carolina</option>
+            <option value="south-dakota">South Dakota</option>
+            <option value="tennessee">Tennessee</option>
+            <option value="texas">Texas</option>
+            <option value="utah">Utah</option>
+            <option value="vermont">Vermont</option>
+            <option value="vi">Virgin Islands</option>
+            <option value="virginia">Virginia</option>
+            <option value="washington">Washington</option>
+            <option value="west-virginia">West Virginia</option>
+            <option value="wisconsin">Wisconsin</option>
+            <option value="wyoming">Wyoming</option>
+          </select><br>
+          <label style="margin-left:30px;"for="country">Country: </label>
+          <input type="text" id="country" name="country">
+        </div>
+  
+        <div>
+          <label for="num-volunteers-3">How many volunteers do you require per shift?</label><br>
+          <input type="number" id="num-volunteers-3" name="num-volunteers-3">
+        </div>
+  
+        <div>
+          <label for="sign-up">If you have a sign-up form that you would like volunteers to use to sign up, please include that link here.</label><br>
+          <input style="width:350px;"type="url" name="sign-up" id="sign-up">
+        </div>
+      </div>
+
+      <div class="cp-4">
+        <div>
+          <label for="skills-majors-4">Please indicate if there are any specific skills desired in an applicant for this position, as well as if there are majors or areas of study preferred. </label><br>
+          <input style="width:400px;" type="text" id="skills-majors-4" name="skills-majors-4">
+        </div>
+  
+        <div>
+          <label for="num-volunteers-4">How many volunteers do you require per shift?</label><br>
+          <input type="number" id="num-volunteers-4" name="num-volunteers-4">
+        </div>
+  
+        <div>
+          <label for="other-needs">Please tell us about your needs and how we can support you:  </label><br>
+        &emsp;<textarea wrap="soft" cols="50" rows="8" maxlength="1000"
+                  id="other-needs"
+                  name="other-needs"></textarea>
+        </div>
+      </div>
+      
+      <div>
+        <input style="width:150px;color:white;background-color:#1e90ff;" type="button" id="submit" value="Submit Form" onclick="showInput();">
+      </div>
+
+    </form>
+
+    <script>
+
+      var x = 0;
+      function enableVizClass(cl) {
+        Array.from(document.getElementsByClassName(cl)).forEach(
+        function(element, index, array) {
+            element.style.display = 'block';
+        }
+    );
+      }
+      
+      function disableVizClass(cl) {
+        Array.from(document.getElementsByClassName(cl)).forEach(
+        function(element, index, array) {
+            element.style.display = 'none';
+        }
+    );
+      }
+      
+      function optionOne() {
+          enableVizClass('cp-1');
+          disableVizClass('cp-2');
+          disableVizClass('cp-3');
+          disableVizClass('cp-4');
+          x = 1;
+      }
+      
+      function optionTwo() {
+          disableVizClass('cp-1');
+          enableVizClass('cp-2');
+          disableVizClass('cp-3');
+          disableVizClass('cp-4');
+          x = 2;
+      }
+
+
+      function optionThree() {
+          disableVizClass('cp-1');
+          disableVizClass('cp-2');
+          enableVizClass('cp-3');
+          disableVizClass('cp-4');
+          x = 3;
+      }
+
+      function optionFour() {
+          disableVizClass('cp-1');
+          disableVizClass('cp-2');
+          disableVizClass('cp-3');
+          enableVizClass('cp-4');
+          x = 4;
+      }
+
+      function showInput() {
+             console.log("First Name: " + document.getElementById("first-name").value);
+             console.log("Last Name: " + document.getElementById("last-name").value);
+             console.log("User: " + document.getElementById("user-type").value);
+             console.log("Organization: " + document.getElementById("organization").value);
+             console.log("Email: " + document.getElementById("email").value);
+             console.log("Partnership: " + document.getElementById("partnership-needs").value);
+
+             if(x==1){
+              console.log("Description: " + document.getElementById("description").value);
+              console.log("Skills/majors: " + document.getElementById("skills-majors-1").value);
+              console.log("Num volunteers: " + document.getElementById("num-volunteers-1").value);
+             }
+             if(x==2){
+              console.log("Project Name: " + document.getElementById("project-name").value);
+              console.log("Location : " + document.getElementById("project-location").value);
+              console.log("Job description: " + document.getElementById("job-description").value);
+              console.log("Skills/majors: " + document.getElementById("skills-majors-2").value);
+              console.log("Start Date: " + document.getElementById("start-date").value);
+              console.log("Num volunteers: " + document.getElementById("num-volunteers-2").value);
+             }
+             if(x==3){
+              console.log("Skills/majors: " + document.getElementById("skills-majors-3").value);
+              console.log("Event Title: " + document.getElementById("event-title").value);
+              console.log("Event Description: " + document.getElementById("event-description").value);
+              console.log("Start Date: " + document.getElementById("start-date-3").value);
+              console.log("End Date: " + document.getElementById("end-date").value);
+              console.log("Shifts: " + document.getElementById("shifts").value);
+              console.log("Num volunteers: " + document.getElementById("num-volunteers-3").value);
+              console.log("Sign up link: " + document.getElementById("sign-up").value);
+             }
+             if(x==4){
+              console.log("Skills/majors: " + document.getElementById("skills-majors-4").value);
+              console.log("Num volunteers:  " + document.getElementById("num-volunteers-4").value);
+              console.log("Other Needs: " + document.getElementById("other-needs").value);
+             }
+        }
+  </script>
+</html>
