@@ -1,0 +1,269 @@
+
+<html>
+  <style>
+    body {
+      background-color: white;
+      font-family: sans-serif;
+      width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .box {
+      background-color: #ecdede;
+      border: 3px solid #6c2129;
+      border-radius: 6px;
+      margin-bottom: 30px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    #title {
+      margin: auto;
+      background-color: #ecdede;
+      color: #6c2129;
+      width: 50%;
+      border: 3px solid #6c2129;
+      border-radius: 6px;
+      padding: 10px;
+      text-align: center;
+    }
+    h3, h2 {
+      color: #010101;
+      margin-left: 30px;
+    }
+    p {
+      color: #181818;
+      margin-left: 30px;
+    }
+    
+    ul {
+      margin-left: 50px;
+    }
+    
+    img {
+      margin-left: 30px;
+      border: 3px solid #7a292f;
+      border-radius: 6px;
+    }
+    
+    hr {
+      border: 1px solid #7a292f;
+      background-color: #7a292f;
+      }
+    ul li {
+      list-style-type: none;
+    }
+      nav {
+        display: flex;
+        align-items: center;
+        padding: 1rem 1.5rem;
+      }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-item {
+      margin-left: 2rem;
+    }
+
+    .nav-link {
+      font-size:20px;
+      color:#9E1B32;
+    }
+    img {
+      width:100%
+    }
+    .about {
+      padding-left:50px;
+      padding-right:50px;
+      text-align:center;
+    }
+
+    
+    div{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        div.cp1, div.cp2, div.cp3, div.cp4{
+             margin-left: 45px;
+        }
+
+    
+        input, select{
+        border-top-width: 0px;
+		    border-right-width: 0px;
+		    border-bottom-width: 1px;
+		    border-left-width: 0px;
+        }
+
+    
+        form {
+          background-color: rgb(240, 270, 275);
+          color:#181818;
+          padding:20px;
+          margin:10px;
+          width:990px;
+        }
+
+        input {
+          color:darkslategray;
+          padding:5px;
+          margin:10px;
+          border: 0.5px solid gray;
+          border-radius: 10%;
+        }
+
+    .cp-1{
+      display: none;
+    }
+    .cp-2{
+      display: none;
+    }
+    .cp-3{
+      display: none;
+    }
+    .cp-4{
+      display: none;
+    }
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 80px;
+    }
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+
+</style>
+<!-- NAV BAR -->
+<nav>
+  <h3 style="color:#9E1B32; font-size:24px"><i>Division of </i><b>Community Affairs</b></h3>
+<ul>
+  <li class="nav-item">
+    <a href="index.html" class="nav-link" id="nav-link">Explore</a>
+  </li>
+  <li class="nav-item">
+    <a href="students-page.html" class="nav-link" id="nav-link">Students</a>
+  </li>
+  <li class="nav-item">
+    <a href="faculty-main-page.html" class="nav-link" id="nav-link">Faculty & Staff</a>
+  </li>
+  <li class="nav-item">
+    <a href="community-page.html" class="nav-link" id="nav-link">Community Partners</a>
+  </li>
+</nav>
+</ul>
+<section class = "welcome">
+  <div class = "intro">
+    <img src="images/faculty-banner.png" alt="faculty-banner">
+</div>
+</section>
+    <form>
+      <div>
+        <label for="elo-select">Select ELO: </label>
+        <select style="height:30px;width:250px;" name="elo-select" id="elo-select"
+                onchange="optionOne();">
+          <option hidden disabled selected value> </option>
+          <option value="community">Community Project</option>
+          <option value="department">Department Project</option>
+          <option value="university">University Project</option>
+          <option value="faculty">Faculty Project</option>
+        </select>
+      </div>
+
+      <div class="cp-1">
+	      
+        <div>
+          <label for="project-name">Title of Position or Project: </label><br>
+          <input style="width:300px;"type="text" id="project-name" name="project-name">
+        </div>
+  
+        <div>
+          <label for="project-location">Project Location: </label><br>
+          <input style="width:300px;" type="text" id="project-location" name="project-location">
+        </div>
+  
+        <div>
+          <label for="job-description">Job Description: </label><br>
+        &emsp;<textarea wrap="soft" cols="50" rows="8" maxlength="1000"
+                  id="job-description"
+                  name="job-description"></textarea>
+        </div>
+  
+        <div>
+          <label for="skills-majors-2">Please indicate if there are any specific skills desired in an applicant for this position, as well as if there are majors or areas of study preferred. </label><br>
+          <input style="width:400px;" type="text" id="skills-majors-2" name="skills-majors-2">
+        </div>
+  
+        <div>
+          <label for="start-date">Anticipated Start Date:</label><br>
+          <input type="date" id="start-date" name="start-date">
+        </div>
+  
+        <div>
+          <label>Required Documents: </label><br>
+        &emsp;<input type="checkbox" id="cover-letter" name="cover-letter" value="cover-letter">
+        <label for="cover-letter">Cover Letter</label><br>
+        &emsp;<input type="checkbox" id="writing-sample" name="writing-sample" value="writing-sample">
+        <label for="writing-sample">Writing Sample</label><br>
+        &emsp;<input type="checkbox" id="other" name="other" value="other">
+        <label for="other">Other</label><br>
+        </div>
+  
+        <div>
+          <label for="num-volunteers-2">How many volunteers do you require per shift?</label><br>
+          <input type="number" id="num-volunteers-2" name="num-volunteers-2">
+        </div>
+	      <div>
+		      <input style="width:150px;color:white;background-color:#1e90ff;"
+		             type="button" id="submit" value="Submit Edit" onclick="showInput();">
+	      </div>
+      </div>
+    
+
+    </form>
+
+    <script>
+
+      var x = 0;
+      function enableVizClass(cl) {
+        Array.from(document.getElementsByClassName(cl)).forEach(
+        function(element, index, array) {
+            element.style.display = 'block';
+        }
+    );
+      }
+      
+      function disableVizClass(cl) {
+        Array.from(document.getElementsByClassName(cl)).forEach(
+        function(element, index, array) {
+            element.style.display = 'none';
+        }
+    );
+      }
+      
+      function optionOne() {
+          enableVizClass('cp-1');
+          x = 1;
+      }
+      
+      function showInput() {
+           console.log("ELO Edited");
+      }
+
+      function showInput() {
+             console.log("ELO: " + document.getElementById("elo-select").value);
+
+             if(x==1){
+              console.log("Description: " + document.getElementById("description").value);
+              console.log("Skills/majors: " + document.getElementById("skills-majors-1").value);
+              console.log("Num volunteers: " + document.getElementById("num-volunteers-1").value);
+             }
+        }
+  </script>
+</html>
